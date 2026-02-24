@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#141e30,#243b55);
+    color:white;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#00e5ff;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00e5ff;
+}
+
+/* Sections */
+section{
+    padding:60px 10%;
+}
+
+h2{
+    color:#00e5ff;
+    margin-bottom:20px;
+}
+
+/* Card */
+.card{
+    background: rgba(255,255,255,0.08);
+    padding:25px;
+    border-radius:15px;
+    backdrop-filter: blur(10px);
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* Skills */
+.skills span{
+    display:inline-block;
+    background: linear-gradient(45deg,#00e5ff,#ff00ff);
+    padding:8px 18px;
+    border-radius:20px;
+    margin:5px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.skills span:hover{
+    transform:scale(1.1);
+}
+
+/* Projects */
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* Form */
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+}
+
+button{
+    background: linear-gradient(45deg,#00e5ff,#ff00ff);
+    border:none;
+    padding:12px 25px;
+    color:white;
+    font-weight:bold;
+    border-radius:25px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+.success{
+    color:#00ff9d;
+    margin-top:10px;
+}
+
+/* Feedback */
+.feedback-box{
+    background: rgba(255,255,255,0.1);
+    padding:10px;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    background: rgba(255,255,255,0.05);
+}

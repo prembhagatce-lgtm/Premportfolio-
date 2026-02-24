@@ -1,0 +1,61 @@
+const form = document.getElementById("form");
+const success = document.getElementById("success");
+const feedbackList = document.getElementById("feedbackList");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    // Validation
+    if(name === ""){
+        alert("Name cannot be empty");
+        return;
+    }
+
+    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    if(!email.match(pattern)){
+        alert("Enter valid email");
+        return;
+    }
+
+    let data = {name,email,message};
+
+    let feedback = JSON.parse(localStorage.getItem("feedback")) || [];
+
+    feedback.push(data);
+
+    localStorage.setItem("feedback", JSON.stringify(feedback));
+
+    success.innerText = "Feedback submitted successfully ✅";
+
+    form.reset();
+
+    displayFeedback();
+
+});
+
+function displayFeedback(){
+
+    let feedback = JSON.parse(localStorage.getItem("feedback")) || [];
+
+    feedbackList.innerHTML = "";
+
+    feedback.forEach(fb => {
+
+        let div = document.createElement("div");
+        div.className = "feedback-box";
+
+        div.innerHTML = `<b>${fb.name}</b> (${fb.email})<br>${fb.message}`;
+
+        feedbackList.appendChild(div);
+
+    });
+
+}
+
+displayFeedback();
