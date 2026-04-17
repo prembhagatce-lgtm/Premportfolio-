@@ -72,3 +72,8 @@ Add backend integration
 Improve UI/UX design
 Add animations and effects
 Add blog section
+
+Contact
+
+Name: Prem Bhagat
+Email: bhagatprem576@gmail.com
