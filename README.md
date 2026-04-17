@@ -52,6 +52,10 @@ JavaScript
 Git & GitHub
 GitHub Pages (Deployment)
 
+Screenshots
+<img width="1781" height="739" alt="Screenshot 2026-04-17 145034" src="https://github.com/user-attachments/assets/4c98ac1d-89f8-473f-aaef-04ae3f016150" />
+<img width="1150" height="825" alt="Screenshot 2026-04-17 145055" src="https://github.com/user-attachments/assets/1494dbc5-8749-414b-852f-34b64ec8b6a0" />
+
 GitHub Repository
 
 https://github.com/prembhagatce-lgtm/Premportfolio-
