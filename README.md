@@ -56,6 +56,19 @@ GitHub Repository
 
 https://github.com/prembhagatce-lgtm/Premportfolio-
 
+uture Improvements
+Add backend functionality
+Improve UI/UX design
+Add animations
+Include more projects
+Add resume download option
+
 Repository Link
 
  https://github.com/prembhagatce-lgtm/portfolio-prem
+
+ Future Improvements
+Add backend integration
+Improve UI/UX design
+Add animations and effects
+Add blog section
